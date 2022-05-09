@@ -13,8 +13,8 @@ function Navbar() {
 					<div className="flex items-center h-20 w-full ">
 						<div className="flex items-center  sm:mx-10 md:mx-20 justify-between w-full">
 							<div className="flex justify-center items-center flex-shrink-0 ">
-								<h1 className=" font-bold text-xl cursor-pointer">
-									Stream<span className="text-blue-500">line</span>
+								<h1 className=" font-bold text-xl cursor-pointer ml-10">
+									Stream<span className="text-blue-500 ">line</span>
 								</h1>
 							</div>
 							<div className="hidden md:block">
@@ -30,6 +30,7 @@ function Navbar() {
 										Home
 									</Link>
 									<Link
+									name="services"
 										activeClass="services"
 										to="services"
 										smooth={true}
@@ -51,14 +52,14 @@ function Navbar() {
 									</Link>
 
 									<Link
-										activeClass="Clients"
-										to="Clients"
+										activeClass="blog"
+										to="blog"
 										smooth={true}
 										offset={50}
 										duration={500}
 										className="cursor-pointer hover:text-blue-600 text-black px-3 py-2"
 									>
-										Clients
+										Blog
 									</Link>
 
 									<Link
@@ -177,15 +178,15 @@ function Navbar() {
 									Projects
 								</Link>
 								<Link
-									href="/Clients"
-									activeClass="Clients"
-									to="Clients"
+									href="/blog"
+									activeClass="blog"
+									to="blog"
 									smooth={true}
 									offset={50}
 									duration={500}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
-									Clients
+									Blog
 								</Link>
 
 								<Link
